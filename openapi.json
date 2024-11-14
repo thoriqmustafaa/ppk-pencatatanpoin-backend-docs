@@ -26,6 +26,10 @@
             "description": "API Endpoints untuk manajemen poin mahasiswa"
         },
         {
+            "name": "Authorization",
+            "description": "API Endpoints untuk manajemen autorisasi"
+        },
+        {
             "name": "Kategori Pelanggaran",
             "description": "API Endpoints untuk manajemen kategori pelanggaran"
         },
@@ -257,7 +261,7 @@
         "/auth/signup": {
             "post": {
                 "tags": [
-                    "auth-controller"
+                    "Authorization"
                 ],
                 "summary": "Register user baru",
                 "description": "Endpoint untuk mendaftarkan user baru",
@@ -300,7 +304,7 @@
         "/auth/signin": {
             "post": {
                 "tags": [
-                    "auth-controller"
+                    "Authorization"
                 ],
                 "summary": "Login user",
                 "description": "Endpoint untuk melakukan login user dan mendapatkan JWT token",
